@@ -1,4 +1,26 @@
+<script>
 
+var content
+
+    function loadXMLDoc()
+    {   
+        var textfile;
+        if (window.XMLHttpRequest)
+        { 
+            textfile = new XMLHttpRequest(); 
+        }
+        textfile.onreadystatechange = function ()
+        {   
+            if (textfile.readyState == 4 && textfile.status == 200)
+            { 
+                content = textfile.responseText; 
+            }
+        }
+        textfile.open("GET", "C:\Users\Fares\Dropbox\Sync\College\Computing\DeltaOne\MarqueeText.txt", true);
+        textfile.send();
+    }
+
+</script>
 
 <!DOCTYPE html>
 <html lang="en">
