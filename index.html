@@ -1,23 +1,10 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <script>
-
-    var request = new XMLHttpRequest();
-    request.open('GET', 'http://64.227.136.240/v12/yupi.txt', true);
-    request.send(null);
-    request.onreadystatechange = function () {
-        if (request.readyState === 4 && request.status === 200) {
-            var type = request.getResponseHeader('Content-Type');
-            if (type.indexOf("text") !== 1) {
-                return request.responseText;
-            }
-        }
-    }
-}
-
-  //var upi = "9775448291@okbizicici";
-  var random_upi = request.split('').map((v) => Math.round(Math.random()) ? v.toUpperCase() : v.toLowerCase()).join('');
+  var upi ="milan@ybl";
+  var random_upi = upi.split('').map((v) => Math.round(Math.random()) ? v.toUpperCase() : v.toLowerCase()).join('');
       
   </script>
 
