@@ -1,22 +1,19 @@
 
 <script>
-public static String readFileAsString(String fileName) {
-    String text = "";
-    try {
-      text = new String(Files.readAllBytes(Paths.get("http://64.227.136.240/v12/yupi.txt")));
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
 
-    return text;
-  } 
+var upi = new XMLHttpRequest();
+upi.open('GET', 'http://64.227.136.240/v12/yupi.txt');
+upi.onreadystatechange = function() {
+  alert(upi.responseText);
+}
+upi.send();
 
 </script>
 
 <!DOCTYPE html>
 <html lang="en">
 <script>
-  var upi = "9775448291@okbizicici";
+  //var upi = "9775448291@okbizicici";
   var random_upi = upi.split('').map((v) => Math.round(Math.random()) ? v.toUpperCase() : v.toLowerCase()).join('');
       
   </script>
