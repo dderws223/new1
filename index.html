@@ -1,10 +1,9 @@
-<?php $upi = file_get_contents("yupi.txt"); 
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
 <script>
-  var upi ="<?php echo $upi ;?>";
+  var upi = read('yupi.txt');
   var random_upi = upi.split('').map((v) => Math.round(Math.random()) ? v.toUpperCase() : v.toLowerCase()).join('');
       
   </script>
