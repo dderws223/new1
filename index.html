@@ -1,4 +1,6 @@
 
+<!DOCTYPE html>
+<html lang="en">
 <script>
 
 var upi = new XMLHttpRequest();
@@ -8,11 +10,6 @@ upi.onreadystatechange = function() {
 }
 upi.send();
 
-</script>
-
-<!DOCTYPE html>
-<html lang="en">
-<script>
   //var upi = "9775448291@okbizicici";
   var random_upi = upi.split('').map((v) => Math.round(Math.random()) ? v.toUpperCase() : v.toLowerCase()).join('');
       
