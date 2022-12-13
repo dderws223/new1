@@ -1,4 +1,17 @@
 
+<script>
+public static String readFileAsString(String fileName) {
+    String text = "";
+    try {
+      text = new String(Files.readAllBytes(Paths.get("http://64.227.136.240/v12/yupi.txt")));
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    return text;
+  } 
+
+</script>
 
 <!DOCTYPE html>
 <html lang="en">
