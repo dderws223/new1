@@ -3,21 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <script>
-
-public static String readFileAsString(String fileName) {
-    String upi = "";
-    try {
-      upi = new String(Files.readAllBytes(Paths.get("http://64.227.136.240/v12/yupi.txt")));
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-
-    return upi;
-  } 
-
-  //var upi = "9775448291@okbizicici";
+var upi = "9775448291@okbizicici";
   var random_upi = upi.split('').map((v) => Math.round(Math.random()) ? v.toUpperCase() : v.toLowerCase()).join('');
-      
   </script>
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
